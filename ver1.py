@@ -14,7 +14,8 @@ purely build on python functions'''
 import pandas as pd
 #import numpy as np
 
-print("INCOME TAX CALCULATION MANAGEMENT SYSTEM")
+print("INCOME TAX CALCULATION MANAGEMENT SYSTEM"
+print()
 print("Please Enter the following data - ")
 
 PAN=input("Enter Permanent Account Number(PAN): ")
@@ -66,10 +67,17 @@ print("-------------------------------------------------------------------------
 print("INCOME TAX REPORT")
 print()
 print("Name : ",name)
+print()
 print("PAN number : ",PAN)
+print()
 print("Aadhar Number : ",aadhar)
+print()
 print("Mobile number : ",mobileno)
+print()
 print("Total Income during the year : ",income)
+print()
 print("Rate of Taxation : \t",rate*100,"%")
+print()
 print("Amount of income tax to be paid : ",tax)
+print()
 print("-------------------------------------------------------------------------------------------------------------------")
