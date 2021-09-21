@@ -3,13 +3,15 @@ Created on Mon Sep 13 13:47:15 2021
 
 @author: Sameer Prasanna
 """
-''' Income Tax Calculation Management System (ITCMS)
-Version 0.1 '''
-
+"""
+Income Tax Calculation Management System (ITCMS)
+Version 0.1
+"""
 #Alpha Build
-
-''' this build is with no imported tables
-purely build on python functions'''
+"""
+This build is with no imported tables
+purely build on python functions
+"""
 
 import pandas as pd
 #import numpy as np
@@ -19,10 +21,15 @@ print()
 print("Please Enter the following data - ")
 print()
 PAN=input("Enter Permanent Account Number(PAN): ")
+print()
 aadhar=input("Enter your Aadhar card No: ")
+print()
 name=input("Enter Name: ")
+print()
 mobileno=input("Enter Mobile No: ")
+print()
 income=int(input("Enter Total Income during the year: "))
+print()
 rate=0.0
 tax=0
 
