@@ -64,6 +64,7 @@ taxpayer.at[0]=[PAN,aadhar,name,mobileno,income,rate*100,tax]
 # - Commands for displaying report
 
 print("------------------------------------------------------------------------------------------------------------------")
+print()
 print("INCOME TAX REPORT")
 print()
 print("Name : ",name)
