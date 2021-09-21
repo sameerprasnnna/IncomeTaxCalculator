@@ -1,16 +1,16 @@
 """
 Created on Mon Sep 13 13:47:15 2021
-
 @author: Sameer Prasanna
 """
-''' Income Tax Calculation Management System (ITCMS)
-Version 0.1 '''
-
+"""
+Income Tax Calculation Management System (ITCMS)
+Version 0.1 
+"""
 #Alpha Build
-
-''' this build is with no imported tables
-purely build on python functions'''
-
+"""
+This build is with no imported tables
+purely build on python functions
+"""
 import pandas as pd
 #import numpy as np
 
