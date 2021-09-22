@@ -4,15 +4,15 @@ Created on Mon Sep 13 13:47:15 2021
 
 @author: Sameer Prasanna
 """
-"""
+'''
 Income Tax Calculation Management System (ITCMS)
 Version 0.1
-"""
+'''
 #Alpha Build
-"""
+'''
 This build is with no imported tables
 purely build on python functions
-"""
+'''
 #</Code info>
 
 import pandas as pd
@@ -24,56 +24,61 @@ print("INCOME TAX CALCULATION MANAGEMENT SYSTEM")
 print()
 print("Please Enter the following data - ")
 print()
-PAN=input("Enter Permanent Account Number(PAN): ")
-print()
-aadhar=input("Enter your Aadhar card No: ")
-print()
-name=input("Enter Name: ")
-print()
-mobileno=input("Enter Mobile No: ")
-print()
-income=int(input("Enter Total Income during the year: "))
-print()
-rate=0.0
-tax=0
-print("------------------------------------------------------------------------------------------------------------------")
-print()
 
-#Tax slabs via conditional statements
-if income<=250000:
-    rate=0
-    print("No Income tax has to be paid by you.")
+a="n"
+while a=="n":
+    PAN=input("Enter Permanent Account Number(PAN): ")
+    print()
+    aadhar=input("Enter your Aadhar card No: ")
+    print()
+    name=input("Enter Name: ")
+    print()
+    mobileno=input("Enter Mobile No: ")
+    print()
+    income=int(input("Enter Total Income during the year: "))
+    print()
+    rate=0.0
+    tax=0
+    print("------------------------------------------------------------------------------------------------------------------")
+    print()
 
-if income>=250001 and income<=500000:
-    rate=0.05
+    #Tax slabs via conditional statements
+    if income<=250000:
+        rate=0
+        print("No Income tax has to be paid by you.")
 
-if income>=500001 and income<=750000:
-    rate=0.1
+    if income>=250001 and income<=500000:
+        rate=0.05
 
-if income>=750001 and income<=1000000:
-    rate=0.15
+    if income>=500001 and income<=750000:
+        rate=0.1
 
-if income>=1000001 and income<=1250000:
-    rate=0.2
+    if income>=750001 and income<=1000000:
+        rate=0.15
 
-if income>=1250001 and income<=1500000:
-    rate=0.25
+    if income>=1000001 and income<=1250000:
+        rate=0.2
 
-if income>1500000:
-    rate=0.3
+    if income>=1250001 and income<=1500000:
+        rate=0.25
 
-tax=rate*income
+    if income>1500000:
+        rate=0.3
 
-# - Commands to make a DataFrame from input data here
+    tax=rate*income
 
-taxpayer=pd.DataFrame(columns=("PAN number"," Aadhar Number"\
-,"Name","Mobile Number","Total Income","Rate of tax(in%)",\
-"Income Tax"),index=None)
+    # - Commands to make a DataFrame from input data here
 
-taxpayer.at[0]=[PAN,aadhar,name,mobileno,income,rate*100,tax]
+    taxpayer=pd.DataFrame(columns=("PAN number"," Aadhar Number"\
+                                   ,"Name","Mobile Number","Total Income","Rate of tax(in%)",\
+                                       "Income Tax"),index=None)
+
+    taxpayer.at[0]=[PAN,aadhar,name,mobileno,income,rate*100,tax]
+    
+    print()
+    a=input('Is the entered data correct(If yes enter y, if no enter n) : ')
 
 # - Commands for displaying report
-
 print("------------------------------------------------------------------------------------------------------------------")
 print()
 print("INCOME TAX REPORT")
