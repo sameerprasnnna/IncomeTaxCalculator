@@ -1,3 +1,4 @@
+#<Code info>
 """
 Created on Mon Sep 13 13:47:15 2021
 
@@ -12,6 +13,8 @@ Version 0.1
 This build is with no imported tables
 purely build on python functions
 """
+#</Code info>
+
 import pandas as pd
 #import numpy as np
 print("------------------------------------------------------------------------------------------------------------------")
