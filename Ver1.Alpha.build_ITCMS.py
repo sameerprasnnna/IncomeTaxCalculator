@@ -12,10 +12,10 @@ Version 0.1
 This build is with no imported tables
 purely build on python functions
 """
-
 import pandas as pd
 #import numpy as np
-
+print("------------------------------------------------------------------------------------------------------------------")
+print()
 print("INCOME TAX CALCULATION MANAGEMENT SYSTEM")
 print()
 print("Please Enter the following data - ")
@@ -32,7 +32,7 @@ income=int(input("Enter Total Income during the year: "))
 print()
 rate=0.0
 tax=0
-
+print("------------------------------------------------------------------------------------------------------------------")
 print()
 
 #Tax slabs via conditional statements
