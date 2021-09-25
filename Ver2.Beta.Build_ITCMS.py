@@ -51,8 +51,7 @@ from sqlalchemy import create_engine
 #Connecting to Database
 con=msctr.connect(host="localhost",user="root",passwd="12345",database="ITCMS")
 dfts=pd.read_sql("SELECT * FROM Taxslab;",con)
-taxpr=pd.read_sql("SELECT * FROM taxpayer;",con)
-#First time use of the above command will raise error so comment it for the first time use
+
 if con.is_connected():
     print()
     print("Successful connection to MySQL Database")
@@ -166,6 +165,7 @@ if f==2:
 
 if f==3:
     #Displaying taxpayer Table from SQL
+    taxpr=pd.read_sql("SELECT * FROM taxpayer;",con)
     print("Previously calculated Income Tax Data Is : ")
     print()
     print(taxpr)
