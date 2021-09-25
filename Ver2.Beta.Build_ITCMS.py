@@ -21,7 +21,6 @@ and exported to MySQL 'Taxpayer' Table
 
 """
 PRE REQUISITES-
-
 SQL database - ITCMS (CREATE DATABASE ITCMS;)
 
 Table - Taxslab
