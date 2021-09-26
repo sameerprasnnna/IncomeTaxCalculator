@@ -20,8 +20,7 @@ and exported to MySQL 'Taxpayer' Table
 #</Code info>
 
 """
-PRE REQUISITES-con=msctr.connect(host="localhost",user="root",passwd="12345",database="ITCMS")
-
+PRE REQUISITES-
 Modules -
 
 mysql.connector
