@@ -104,7 +104,7 @@ while n=='n':
             print()
             rate=0.0
             tax=0
-            print("------------------------------------------------------------")
+            print("------------------------------------------------------------------------")
             print()
          
             #Conditional Statements for determining rate and Tax to be paid
@@ -141,7 +141,7 @@ while n=='n':
             print()
     
             # - Commands for displaying report
-            print("------------------------------------------------------------------------------------------------------------------")
+            print("------------------------------------------------------------------------")
             print()
             print("INCOME TAX REPORT")
             print()
@@ -159,7 +159,7 @@ while n=='n':
             print()
             print("Amount of Income tax to be paid :\t",tax)
             print()
-            print("-------------------------------------------------------------------------------------------------------------------")
+            print("------------------------------------------------------------------------")
         
             #Code to export the Taxpayer DataFrame to MySQL
             dbengine=create_engine('mysql+pymysql://root:12345@localhost/ITCMS')
