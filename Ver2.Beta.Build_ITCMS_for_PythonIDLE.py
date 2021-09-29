@@ -64,7 +64,7 @@ if con.is_connected():
     print("Successful connection to MySQL Database")
 
 print()
-print("------------------------------------------------------------------------------------------------------------------")
+print("------------------------------------------------------------------------")
 print()
 print("INCOME TAX CALCULATION MANAGEMENT SYSTEM")
 print()
@@ -104,7 +104,7 @@ while n=='n':
             print()
             rate=0.0
             tax=0
-            print("------------------------------------------------------------------------------------------------------------------")
+            print("------------------------------------------------------------")
             print()
          
             #Conditional Statements for determining rate and Tax to be paid
