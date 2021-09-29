@@ -50,9 +50,8 @@ Mobile_Number varchar(10),Total_Income int,Rate_of_tax float,Income_Tax int);
 #<Import Statements>
 import pandas as pd
 import mysql.connector as msctr
-#import pymysql
+import pymysql
 from sqlalchemy import create_engine
-#import numpy as np
 #</Import Statements>
 
 #Connecting to Database
