@@ -18,7 +18,6 @@ and all the user data is to be inputted
 and exported to MySQL 'Taxpayer' Table
 '''
 #</Code info>
-
 """
 PRE REQUISITES-
 
